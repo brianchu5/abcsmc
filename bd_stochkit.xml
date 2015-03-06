@@ -1,0 +1,44 @@
+<Model>
+<Description>bd (bd)</Description>
+<NumberOfReactions>2</NumberOfReactions>
+<NumberOfSpecies>1</NumberOfSpecies>
+<ParametersList>
+<Parameter>
+<Id>kb</Id>
+<Expression>0.788639852803</Expression>
+</Parameter>
+<Parameter>
+<Id>kf</Id>
+<Expression>7.80513265979</Expression>
+</Parameter>
+</ParametersList>
+<ReactionsList>
+<Reaction>
+<Id>R1</Id>
+<Type>mass-action</Type>
+<Rate>kf</Rate>
+<Reactants/>
+<Products>
+<SpeciesReference id="protein" stoichiometry="1.0"/>
+</Products>
+<Description>None &gt; {1.0} protein</Description>
+</Reaction>
+<Reaction>
+<Id>R2</Id>
+<Type>mass-action</Type>
+<Rate>kb</Rate>
+<Reactants>
+<SpeciesReference id="protein" stoichiometry="1.0"/>
+</Reactants>
+<Products/>
+<Description>{1.0} protein &gt; None</Description>
+</Reaction>
+</ReactionsList>
+<SpeciesList>
+<Species>
+<Id>protein</Id>
+<Description>protein</Description>
+<InitialPopulation>0.0</InitialPopulation>
+</Species>
+</SpeciesList>
+</Model>
